@@ -1,8 +1,9 @@
 import Post from './Post';
+import classes from './PostsList.module.css';
 
-function Posts(props) {
+function PostsList(props) {
   return (
-    <ul>
+    <ul className={classes.posts}>
       {props.posts.map((post) => (
         <Post key={post.id} author={post.author} body={post.body} />
       ))}
@@ -10,4 +11,4 @@ function Posts(props) {
   );
 }
 
-export default Posts;
+export default PostsList;

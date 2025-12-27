@@ -1,4 +1,4 @@
-import Posts from './components/Posts';
+import PostsList from './components/PostsList';
 
 const posts = [
   {id: 'p1', author: "Varje", body:"React.js is awesome!"},
@@ -6,7 +6,7 @@ const posts = [
 ]
 function App() {
   return <main>
-    <Posts posts={posts} />
+    <PostsList posts={posts} />
   </main>;
 }
 
