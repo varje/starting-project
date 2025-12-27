@@ -4,9 +4,8 @@ import classes from './PostsList.module.css';
 function PostsList(props) {
   return (
     <ul className={classes.posts}>
-      {props.posts.map((post) => (
-        <Post key={post.id} author={post.author} body={post.body} />
-      ))}
+      <Post author="Varje" body="React.js is awesome!" />
+      <Post author="Virve" body="Check out the full course" />
     </ul>
   );
 }
