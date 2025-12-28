@@ -4,6 +4,7 @@ import classes from './NewPost.module.css';
 function NewPost({ onCancel }) {
   const [enteredBody, setEnteredBody] = useState('');
   const [enteredAuthor, setEnteredAuthor] = useState('');
+  
   function bodyChangeHandler(event) {
     setEnteredBody(event.target.value);
   }
@@ -18,6 +19,7 @@ function NewPost({ onCancel }) {
       body: enteredBody,
       author: enteredAuthor,
     };
+    onCancel();
   }
 
   return (
